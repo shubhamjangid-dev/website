@@ -8,13 +8,13 @@ function App() {
 
   return (
     <>
-      <div className="w-full min-h-screen flex flex-wrap flex-col justify-center text-white bg-black">
+      <div className="px-4 md:px-0 w-full min-h-screen flex flex-wrap flex-col justify-center text-white bg-black">
         <div>
-          <h1 className="text-6xl font-medium font-mono"> &#123; Coming Soon &#125;</h1>
-          <p className="mt-4 text-sm font-medium text-gray-500 font-mono">Stay tune for futher updates and news</p>
+          <h1 className="sm:text-6xl text-3xl font-medium font-mono"> &#123; Coming Soon &#125;</h1>
+          <p className="mt-4 sm:text-lg text-xs font-medium text-gray-500 font-mono">Stay tune for futher updates and news</p>
         </div>
-        <div className="w-full flex flex-wrap justify-center mt-16">
-          <button className="flex flex-wrap justify-center mr-4 px-8 py-2 box-border rounded-md border-2 border-white/50">
+        <div className="w-full flex flex-wrap justify-center item-center gap-4 mt-16">
+          <button className="flex flex-wrap justify-center px-8 py-2 box-border rounded-md border-2 border-white/50">
             <svg
               className="mt-1 mr-2"
               viewBox="0 0 20 20"
@@ -70,7 +70,7 @@ function App() {
             </svg>
             <a href="https://www.github.com/shubhamjangid-dev/">GitHub</a>
           </button>
-          <button className="flex flex-wrap justify-center mr-4 px-8 py-2 box-border rounded-md border-2 border-white/50">
+          <button className="flex flex-wrap justify-center px-8 py-2 box-border rounded-md border-2 border-white/50">
             <svg
               className="mt-1 mr-2"
               viewBox="4 4 20 20"
