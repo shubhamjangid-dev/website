@@ -4,14 +4,12 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="px-4 md:px-0 w-full min-h-screen flex flex-wrap flex-col justify-center text-white bg-black">
         <div>
           <h1 className="sm:text-6xl text-3xl font-medium font-mono"> &#123; Coming Soon &#125;</h1>
-          <p className="mt-4 sm:text-lg text-xs font-medium text-gray-500 font-mono">Stay tune for futher updates and news</p>
+          <p className="mt-4 sm:text-lg text-xs font-medium text-gray-500 font-mono">Stay tuned for futher updates</p>
         </div>
         <div className="w-full flex flex-wrap justify-center item-center gap-4 mt-16">
           <button className="flex flex-wrap justify-center px-8 py-2 box-border rounded-md border-2 border-white/50">
