@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee.jsx";
 import Seperator from "@/assets/Seperator.svg";
-export function MarqueeDemo() {
+export function MarqueeDemo({ children }) {
   return (
     <div className="w-full bg-black text-white">
-      <div className="h-40 text-7xl relative flex w-full max-w-screen-lg flex-col items-center justify-center overflow-hidden mx-auto ">
+      <div className="h-20 md:h-28 lg:h-40 text-4xl md:text-5xl lg:text-7xl relative flex w-full max-w-screen-lg flex-col items-center justify-center overflow-hidden mx-auto ">
         <Marquee
           pauseOnHover
           className="[--duration:20s] [--gap:2rem] [gap:var(--gap)]"
