@@ -12,7 +12,7 @@ function CustomCursor() {
   return (
     <>
       <div
-        className="fixed top-0 left-0 z-50 pointer-events-none transition-transform duration-500 ease-out border-[1px] border-black h-8 w-8 rounded-full"
+        className="fixed top-0 left-0 z-50 pointer-events-none transition-transform duration-500 ease-out border-[2px] border-gray-400 h-8 w-8 rounded-full"
         style={{
           transform: `translate(${position.x - 16}px,${position.y - 16}px)`,
         }}
