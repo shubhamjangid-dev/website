@@ -4,6 +4,7 @@ import { MarqueeDemo } from "./MarqueeDemo";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import SkillSection from "./components/SkillSection";
+import ProfileSection from "./components/ProfileSection";
 function HomePage() {
   return (
     <>
@@ -11,6 +12,7 @@ function HomePage() {
       <AboutSection />
       <MarqueeDemo />
       <SkillSection />
+      <ProfileSection />
     </>
   );
 }
