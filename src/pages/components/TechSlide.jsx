@@ -1,5 +1,41 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee.jsx";
+import tailwindcss from "@/assets/techStackIcons/tailwindcss.svg";
+import js from "@/assets/techStackIcons/js.svg";
+import cpp from "@/assets/techStackIcons/c++.svg"; // Note: Use a valid JS variable name
+import python from "@/assets/techStackIcons/python.svg";
+import java from "@/assets/techStackIcons/java.svg";
+import typescript from "@/assets/techStackIcons/typescript.svg";
+import express from "@/assets/techStackIcons/express.svg";
+import react from "@/assets/techStackIcons/react.svg";
+import mysql from "@/assets/techStackIcons/mysql.svg";
+import mongodb from "@/assets/techStackIcons/mongodb.svg";
+import nodejs from "@/assets/techStackIcons/nodejs.svg";
+import nextjs from "@/assets/techStackIcons/nextjs.svg";
+import render from "@/assets/techStackIcons/render.svg";
+import vercel from "@/assets/techStackIcons/vercel.svg";
+import git from "@/assets/techStackIcons/git.svg";
+import postman from "@/assets/techStackIcons/postman.svg";
+
+const iconMap = {
+  tailwindcss,
+  js,
+  cpp,
+  python,
+  java,
+  typescript,
+  express,
+  react,
+  mysql,
+  mongodb,
+  nodejs,
+  nextjs,
+  render,
+  vercel,
+  git,
+  postman,
+};
+
 const icons1 = ["tailwindcss", "js", "c++", "python", "java", "typescript", "express", "react"];
 const icons2 = ["mysql", "mongodb", "nodejs", "nextjs", "render", "vercel", "git", "postman"];
 export function TechSlide({ children }) {
@@ -15,8 +51,8 @@ export function TechSlide({ children }) {
             <div className="">
               <img
                 key={index}
-                src={`src/assets/techStackIcons/${icon}.svg`}
-                alt={`Skill`}
+                src={iconMap[icon]}
+                alt={`icon`}
                 className="h-10 w-10 md:h-20 md:w-20 mx-auto"
               />
               <h1 className="text-sm md:text-lg lg:text-xl">{icon}</h1>
@@ -31,8 +67,8 @@ export function TechSlide({ children }) {
             <div className="">
               <img
                 key={index}
-                src={`src/assets/techStackIcons/${icon}.svg`}
-                alt={`Skill`}
+                src={iconMap[icon]}
+                alt={`icon`}
                 className="h-10 w-10 md:h-20 md:w-20 mx-auto"
               />
               <h1 className="text-sm md:text-lg lg:text-xl">{icon}</h1>
