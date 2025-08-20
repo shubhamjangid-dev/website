@@ -20,7 +20,7 @@ import postman from "@/assets/techStackIcons/postman.svg";
 const iconMap = {
   tailwindcss,
   js,
-  cpp,
+  "c++": cpp,
   python,
   java,
   typescript,
@@ -41,37 +41,37 @@ const icons2 = ["mysql", "mongodb", "nodejs", "nextjs", "render", "vercel", "git
 export function TechSlide({ children }) {
   return (
     <div className="w-full bg-white text-black">
-      <div className="h-40 md:h-80 text-xl relative flex w-full flex-col items-center justify-center overflow-hidden mx-auto gap-y-8 md:gap-y-16">
+      <div className="h-[50vh] text-xl relative flex w-full flex-col items-center justify-center overflow-hidden mx-auto gap-y-12 md:gap-y-16">
         <Marquee
           pauseOnHover
           reverse
-          className="[--duration:15s] [--gap:3rem] md:[--gap:4rem] [gap:var(--gap)]"
+          className="[--duration:15s] [--gap:3rem] md:[--gap:4rem] [gap:var(--gap)] p-6"
         >
           {icons1.map((icon, index) => (
-            <div className="">
+            <div className="relative p-4  rounded-3xl shadow-lg">
               <img
                 key={index}
                 src={iconMap[icon]}
                 alt={`icon`}
                 className="h-10 w-10 md:h-20 md:w-20 mx-auto"
               />
-              <h1 className="text-sm md:text-lg lg:text-xl">{icon}</h1>
+              {/* <h1 className="absolute -top-8  text-sm md:text-lg lg:text-xl border-[1px] rounded-sm border-gray-400 my-2 px-2 text-gray-400 hover:text-black hover:border-black">{icon}</h1> */}
             </div>
           ))}
         </Marquee>
         <Marquee
           pauseOnHover
-          className=" [--duration:15s] [--gap:3rem] md:[--gap:4rem] [gap:var(--gap)]"
+          className=" [--duration:15s] [--gap:3rem] md:[--gap:4rem] [gap:var(--gap)] p-6"
         >
           {icons2.map((icon, index) => (
-            <div className="">
+            <div className="p-4 rounded-3xl shadow-lg">
               <img
                 key={index}
                 src={iconMap[icon]}
                 alt={`icon`}
                 className="h-10 w-10 md:h-20 md:w-20 mx-auto"
               />
-              <h1 className="text-sm md:text-lg lg:text-xl">{icon}</h1>
+              {/* <h1 className="text-sm md:text-lg lg:text-xl">{icon}</h1> */}
             </div>
           ))}
         </Marquee>
