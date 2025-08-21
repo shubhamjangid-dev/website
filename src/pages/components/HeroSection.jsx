@@ -1,5 +1,5 @@
 import React from "react";
-import ShubhamJangir from "@/assets/Shubham.png";
+import ShubhamJangir from "@/assets/ShubhamComp.png";
 function HeroSection() {
   return (
     <div className="w-full min-h-screen bg-black flex flex-col justify-center items-center text-white ">
