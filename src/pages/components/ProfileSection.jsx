@@ -1,3 +1,5 @@
+import GFG from "@/components/icons/GFG";
+import LeetCode from "@/components/icons/LeetCode";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import React from "react";
 
@@ -31,12 +33,28 @@ function ProfileSection() {
           <Mail />
         </a>
         <a
-          href="https://drive.google.com/file/d/1GbgdrrjngJLTwYJXMwY-dJSZSAzm1P6f/view?usp=sharing"
+          href={`${import.meta.env.VITE_RESUME_URL}`}
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 hover:text-[#f49e12]"
         >
           <FileText />
+        </a>
+        <a
+          href="https://leetcode.com/u/shubham_jangir_2002/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 hover:text-[#f49e12]"
+        >
+          <LeetCode />
+        </a>
+        <a
+          href="https://www.geeksforgeeks.org/user/sjangivvtf/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 hover:text-[#f49e12]"
+        >
+          <GFG />
         </a>
       </div>
       <p className="text-center text-sm text-gray-400 m-10">© {new Date().getFullYear()} shubhamjangir.in. All rights reserved.</p>
