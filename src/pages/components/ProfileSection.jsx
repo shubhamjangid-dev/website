@@ -44,7 +44,7 @@ function ProfileSection() {
           href="https://leetcode.com/u/shubham_jangir_2002/"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 hover:text-[#f49e12]"
+          className="p-2 hover:text-[#f49e12] "
         >
           <LeetCode />
         </a>

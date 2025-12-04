@@ -4,11 +4,11 @@ function GFG() {
   return (
     <svg
       role="img"
-      viewBox="0 0 24 24"
+      viewBox="0 4 24 16"
       xmlns="http://www.w3.org/2000/svg"
       id="Geeksforgeeks--Streamline-Simple-Icons"
-      height={30}
-      width={30}
+      height={24}
+      width={36}
       className="fill-current"
     >
       <path

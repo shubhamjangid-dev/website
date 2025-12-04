@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee.jsx";
 import tailwindcss from "@/assets/techStackIcons/tailwindcss.svg";
 import js from "@/assets/techStackIcons/js.svg";
@@ -53,7 +52,7 @@ export function TechSlide({ children }) {
                 key={index}
                 src={iconMap[icon]}
                 alt={`icon`}
-                className="h-10 w-10 md:h-20 md:w-20 mx-auto"
+                className="h-20 w-20 mx-auto"
               />
               {/* <h1 className="absolute -top-8  text-sm md:text-lg lg:text-xl border-[1px] rounded-sm border-gray-400 my-2 px-2 text-gray-400 hover:text-black hover:border-black">{icon}</h1> */}
             </div>
@@ -69,7 +68,7 @@ export function TechSlide({ children }) {
                 key={index}
                 src={iconMap[icon]}
                 alt={`icon`}
-                className="h-10 w-10 md:h-20 md:w-20 mx-auto"
+                className="h-20 w-20 mx-auto"
               />
               {/* <h1 className="text-sm md:text-lg lg:text-xl">{icon}</h1> */}
             </div>
