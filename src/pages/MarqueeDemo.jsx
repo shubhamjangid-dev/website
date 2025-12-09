@@ -9,13 +9,13 @@ export function MarqueeDemo() {
           className="[--duration:20s] [--gap:2rem] [gap:var(--gap)]"
         >
           <h1>Code </h1>
-          <img src={Seperator}></img>
+          <img src={Seperator} alt="*"></img>
           <h1>Create </h1>
-          <img src={Seperator}></img>
+          <img src={Seperator} alt="*"></img>
           <h1>Iterate</h1>
-          <img src={Seperator}></img>
+          <img src={Seperator} alt="*"></img>
           <h1>Ship</h1>
-          <img src={Seperator}></img>
+          <img src={Seperator} alt="*"></img>
         </Marquee>
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black to-transparent z-10"></div>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black to-transparent z-10"></div>

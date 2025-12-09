@@ -15,7 +15,7 @@ function HeroSection() {
             className="w-[50vh] z-10"
             loading="lasy"
             decoding="async"
-            fetchPriority=""
+            alt="ShubhamJangir"
           ></img>
         </div>
       </div>
