@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Switch } from "@/components/ui/switch";
 function AboutSection() {
   const [isHighlighted, setIsHighlighted] = useState(false);

@@ -1,7 +1,6 @@
 import GFG from "@/components/icons/GFG";
 import LeetCode from "@/components/icons/LeetCode";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
-import React from "react";
 
 function ProfileSection() {
   return (

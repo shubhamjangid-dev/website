@@ -37,19 +37,20 @@ const iconMap = {
 
 const icons1 = ["tailwindcss", "js", "c++", "python", "java", "typescript", "express", "react"];
 const icons2 = ["mysql", "mongodb", "nodejs", "nextjs", "render", "vercel", "git", "postman"];
-export function TechSlide({ children }) {
+export function TechSlide() {
   return (
     <div className="w-full bg-white text-black">
       <div className="h-[50vh] text-xl relative flex w-full flex-col items-center justify-center overflow-hidden mx-auto gap-y-12 md:gap-y-16">
         <Marquee
-          pauseOnHover
           reverse
           className="[--duration:15s] [--gap:3rem] md:[--gap:4rem] [gap:var(--gap)] p-6"
         >
           {icons1.map((icon, index) => (
-            <div className="relative p-4  rounded-3xl shadow-lg">
+            <div
+              key={index}
+              className="relative p-4  rounded-3xl shadow-lg"
+            >
               <img
-                key={index}
                 src={iconMap[icon]}
                 alt={`icon`}
                 className="h-20 w-20 mx-auto"
@@ -59,13 +60,11 @@ export function TechSlide({ children }) {
           ))}
         </Marquee>
         <Marquee
-          pauseOnHover
           className=" [--duration:15s] [--gap:3rem] md:[--gap:4rem] [gap:var(--gap)] p-6"
         >
           {icons2.map((icon, index) => (
-            <div className="p-4 rounded-3xl shadow-lg">
+            <div key={index} className="p-4 rounded-3xl shadow-lg">
               <img
-                key={index}
                 src={iconMap[icon]}
                 alt={`icon`}
                 className="h-20 w-20 mx-auto"

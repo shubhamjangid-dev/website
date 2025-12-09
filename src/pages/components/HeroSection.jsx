@@ -1,4 +1,3 @@
-import React from "react";
 import ShubhamJangir from "@/assets/ShubhamComp.png";
 function HeroSection() {
   return (
@@ -16,6 +15,7 @@ function HeroSection() {
             className="w-[50vh] z-10"
             loading="lasy"
             decoding="async"
+            fetchPriority=""
           ></img>
         </div>
       </div>

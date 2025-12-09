@@ -1,4 +1,3 @@
-import React from "react";
 import { TechSlide } from "./TechSlide";
 
 function SkillSection() {
