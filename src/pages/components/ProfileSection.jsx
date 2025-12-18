@@ -48,7 +48,7 @@ function ProfileSection() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 transition-colors hover:text-[#f49e12]"
+                  className="p-2 transition-colors hover:text-highlightColor"
                   aria-label={label}
                 >
                   <Icon />
@@ -57,7 +57,7 @@ function ProfileSection() {
 
               <TooltipContent
                 side="top"
-                className="rounded-md bg-zinc-900 px-3 py-1.5 text-xs font-medium text-[#f49e12] shadow-md"
+                className="rounded-md bg-zinc-900 px-3 py-1.5 text-xs font-medium text-highlightColor shadow-md"
               >
                 {label}
               </TooltipContent>

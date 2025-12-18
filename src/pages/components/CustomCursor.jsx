@@ -18,7 +18,7 @@ function CustomCursor() {
         }}
       ></div>
       <div
-        className="fixed top-0 left-0 z-50 pointer-events-none transition-transform duration-100 ease-out bg-[#f49e12] h-2 w-2 rounded-full"
+        className="fixed top-0 left-0 z-50 pointer-events-none transition-transform duration-100 ease-out bg-highlightColor h-2 w-2 rounded-full"
         style={{
           transform: `translate(${position.x - 4}px,${position.y - 4}px)`,
         }}

@@ -50,9 +50,11 @@ function AboutSection() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-white p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col md:flex-row">
+    <div className="w-full bg-black text-white p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col md:flex-row">
       <div className="max-w-screen-xl md:flex-1 p-4 lg:p-10 text-lg text-left ">
-        <h1 className="text-6xl lg:text-8xl font-AnticDidone">A Little About Me</h1>
+        <h1 className="text-6xl lg:text-8xl font-AnticDidone">
+          A Little About <span className="text-highlightColor">Me</span>
+        </h1>
         <div className="my-4 md:my-8">
           <Switch
             className=""
@@ -63,14 +65,14 @@ function AboutSection() {
           />
         </div>
       </div>
-      <div className="max-w-screen-xl  flex-1 p-4 lg:p-10 text-lg text-left text-black/70">
+      <div className="max-w-screen-xl  flex-1 p-4 lg:p-10 text-lg text-left text-white/80">
         <p className="">
           {paragraph.split(" ").map((word, index) => {
             const isImp = importantWords.includes(word);
             return (
               <span
                 key={index}
-                className={`${isHighlighted ? (isImp ? "" : "line-through text-gray-300") : " "}`}
+                className={`${isHighlighted ? (isImp ? "text-highlightColor/80" : "line-through text-gray-800") : " "}`}
               >
                 {word + " "}
               </span>
@@ -83,7 +85,7 @@ function AboutSection() {
             return (
               <span
                 key={index}
-                className={`${isHighlighted ? (isImp ? "text-black" : "line-through text-gray-300") : " "}`}
+                className={`${isHighlighted ? (isImp ? "text-highlightColor/80" : "line-through text-gray-800") : " "}`}
               >
                 {word + " "}
               </span>

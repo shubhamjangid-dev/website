@@ -8,7 +8,7 @@ function HeroSection() {
         <h1 className="m-auto text-lg font-AnticDidone">Shubham Jangir</h1>
       </div>
       <div className="max-w-screen-lg flex-1 flex flex-col justify-between">
-        <h1 className="text-3xl md:text-5xl mt-16 font-AnticDidone text-[#f49e12]">Full Stack Developer</h1>
+        <h1 className="text-3xl md:text-5xl mt-16 font-AnticDidone text-highlightColor">Full Stack Developer</h1>
         <div className="flex justify-center">
           <img
             src={ShubhamJangir}
@@ -19,6 +19,7 @@ function HeroSection() {
           ></img>
         </div>
       </div>
+      <div className="w-full border-b-[0.5px] flex justify-center border-white relative"/>
     </div>
   );
 }
