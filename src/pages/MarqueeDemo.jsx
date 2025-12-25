@@ -2,7 +2,7 @@ import { Marquee } from "@/components/magicui/marquee.jsx";
 import Seperator from "@/assets/Seperator.svg";
 export function MarqueeDemo() {
   return (
-    <div className="w-full bg-black text-white">
+    <div className="w-full bg-black text-white border-y-[0.5px] py-6">
       <div className="h-20 md:h-28 lg:h-40 text-4xl md:text-5xl lg:text-7xl relative flex w-full max-w-screen-lg flex-col items-center justify-center overflow-hidden mx-auto ">
         <Marquee
           pauseOnHover
